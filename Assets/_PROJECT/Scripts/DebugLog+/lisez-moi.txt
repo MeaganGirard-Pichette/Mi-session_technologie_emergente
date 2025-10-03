@@ -1,0 +1,36 @@
+Classe Utilitaire statique Debug 
+Version 4
+Auteur: Y. Bourdel
+Automne 2025 TIM
+----------------------------------------------------------
+
+Cette classe modifie la fonction Debug de base de Unity.
+
+Utilisée pour rendre plus clair l'affichage
+de messages Debug.Log() au tableau par le prof...
+
+(les affichages console peuvent alors se faire en couleur 
+et en grandes tailles)
+
+Simplement mettre cette classe dans le dossier Assets
+d'un projet et le Debug.Log de base sera remplacé par
+les fonctionnalités de cette classe.
+
+
+Exemples d'utilisation:
+----------------------------------------------------------
+Debug.size = 18; // La taille d'affichage par défault est réglée à 18
+Debug.color = Color.red; // La couleur par défaut est réglée à rouge
+Debug.Log("Bonjour"); // Affiche Bonjour, selon la taille et la couleur par défaut
+Debug.Log("Salut", 12, "green"); // Affiche Bonjour, en taille 12 et en vert
+Debug.Log("Bye", 20, Color.red); // Affiche Bye, en taille 20 et en rouge
+Debug.Log("Test", 24, "#0000FF"); // Affiche Test, en taille 24 et en bleu
+Debug.Trace("Allo",true,345); // Affiche   Allo  true   345, selon la taille et la couleur par défaut
+Debug.active=false; // Désactive tous les Debug.Log
+
+
+----------------------------------------------------------
+IMPORTANT:
+Pour un affichage de grande taille (par exemple taille 20, régler dans le burger
+de la console: Log entry> 5 lines ou + sinon le texte va apparaître tronqué dans
+la fenêtre de console
